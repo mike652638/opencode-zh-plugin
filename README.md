@@ -1,5 +1,11 @@
 # opencode-zh-plugin
 
+[![npm version](https://img.shields.io/npm/v/opencode-zh-plugin?color=green&label=npm)](https://www.npmjs.com/package/opencode-zh-plugin)
+[![npm downloads](https://img.shields.io/npm/dt/opencode-zh-plugin?color=blue)](https://www.npmjs.com/package/opencode-zh-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/mike652638/opencode-zh-plugin?style=flat)](https://github.com/mike652638/opencode-zh-plugin/stargazers)
+[![license](https://img.shields.io/npm/l/opencode-zh-plugin)](./LICENSE)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/mike652638/opencode-zh-plugin/ci.yml?branch=main)](https://github.com/mike652638/opencode-zh-plugin/actions)
+
 OpenCode 中文增强插件 — 通过官方 Plugin + Skill 机制实现 AI 回复中文化与 TUI 界面汉化。
 
 ## 工作原理
