@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    [
+      "opencode-zh-plugin",
+      {
+        "enabled": true,
+        "locale": "zh-CN",
+        "systemPrompt": true,
+        "tuiSlots": true,
+        "commands": true
+      }
+    ]
+  ]
+}

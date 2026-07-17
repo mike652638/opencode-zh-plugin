@@ -1,0 +1,53 @@
+{
+  "name": "opencode-zh-plugin",
+  "version": "0.1.0",
+  "description": "Chinese locale plugin for OpenCode — AI reply localization + TUI slot replacement + slash commands",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["opencode", "plugin", "i18n", "chinese", "zh-CN", "zh-TW", "localization"],
+  "main": "./dist/server.js",
+  "exports": {
+    "./server": {
+      "import": "./dist/server.js",
+      "types": "./dist/server.d.ts",
+      "config": {
+        "enabled": true,
+        "locale": "zh-CN",
+        "systemPrompt": true,
+        "tuiSlots": true,
+        "commands": true
+      }
+    },
+    "./tui": {
+      "import": "./dist/tui.jsx",
+      "types": "./dist/tui.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "opencode": "^1.18.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.3",
+    "@opentui/solid": "^0.4.4",
+    "solid-js": "^1.9.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.0"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  }
+}
