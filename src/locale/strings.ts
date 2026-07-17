@@ -23,7 +23,7 @@ const zhCN: StringMap = {
   toast_zh_cn: "已切换到简体中文",
   toast_zh_tw: "已切換到繁體中文",
   locale_label: "简体中文",
-  powered_by: "由 opencode-zh 驱动",
+  powered_by: "由 opencode-zh-plugin 驱动",
 }
 
 const zhTW: StringMap = {
@@ -47,7 +47,7 @@ const zhTW: StringMap = {
   toast_zh_cn: "已切換到簡體中文",
   toast_zh_tw: "已切換到繁體中文",
   locale_label: "繁體中文",
-  powered_by: "由 opencode-zh 驅動",
+  powered_by: "由 opencode-zh-plugin 驅動",
 }
 
 const maps: Record<ZhLocale, StringMap> = { "zh-CN": zhCN, "zh-TW": zhTW }

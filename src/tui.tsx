@@ -22,7 +22,7 @@ const tui: TuiPlugin = async (api, options) => {
   })
 }
 
-const mod: TuiPluginModule = { id: "opencode-zh", tui }
+const mod: TuiPluginModule = { id: "opencode-zh-plugin", tui }
 
 export default mod
 export { tui }

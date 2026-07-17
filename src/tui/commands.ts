@@ -2,8 +2,8 @@ import type { TuiCommand, TuiPluginApi } from "@opencode-ai/plugin/tui"
 import type { ZhLocale } from "../config.js"
 import { t } from "../locale/strings.js"
 
-const KV_LOCALE = "opencode-zh:locale"
-const KV_ENABLED = "opencode-zh:enabled"
+const KV_LOCALE = "opencode-zh-plugin:locale"
+const KV_ENABLED = "opencode-zh-plugin:enabled"
 
 export function buildCommands(
   api: TuiPluginApi,
