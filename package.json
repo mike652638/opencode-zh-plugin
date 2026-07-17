@@ -1,6 +1,6 @@
 {
   "name": "opencode-zh-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Chinese locale plugin for OpenCode — AI reply localization + TUI slot replacement + slash commands",
   "type": "module",
   "license": "MIT",
@@ -26,7 +26,8 @@
   "files": [
     "dist",
     "skills",
-    "README.md"
+    "README.md",
+    "README.en.md"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
