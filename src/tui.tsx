@@ -12,9 +12,13 @@ const tui: TuiPlugin = async (api, options) => {
   }
 
   let unregisterCommands: (() => void) | undefined
-  if (opts.commands && api.command) {
+  if (opts.commands) {
     const cmds = buildCommands(api, opts.locale)
-    unregisterCommands = api.command.register(() => cmds)
+    if (api.command) {
+      unregisterCommands = api.command.register(() => cmds)
+    } else if (api.keymap && typeof api.keymap === "object" && "registerLayer" in api.keymap) {
+      unregisterCommands = (api.keymap as { registerLayer: (opts: { commands: typeof cmds }) => () => void }).registerLayer({ commands: cmds })
+    }
   }
 
   api.lifecycle.onDispose(() => {
