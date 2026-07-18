@@ -1,6 +1,6 @@
 import type { TuiPlugin, TuiPluginModule } from "@opencode-ai/plugin/tui"
 import { resolveOptions } from "./config.js"
-import { buildSlotPlugin } from "./tui/slots.jsx"
+import { buildSlotPlugin } from "./tui/slots.js"
 import { buildCommands } from "./tui/commands.js"
 
 const tui: TuiPlugin = async (api, options) => {

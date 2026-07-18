@@ -1,6 +1,6 @@
 {
   "name": "opencode-zh-plugin",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Chinese locale plugin for OpenCode — AI reply localization + TUI slot replacement + slash commands",
   "type": "module",
   "license": "MIT",
@@ -19,7 +19,7 @@
       }
     },
     "./tui": {
-      "import": "./dist/tui.jsx",
+      "import": "./dist/tui.js",
       "types": "./dist/tui.d.ts"
     }
   },

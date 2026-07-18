@@ -6,7 +6,7 @@
     "rootDir": "./src",
     "allowImportingTsExtensions": false,
     "declaration": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   },
   "exclude": ["node_modules", "dist"]
 }
