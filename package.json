@@ -1,9 +1,14 @@
 {
   "name": "opencode-zh-plugin",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Chinese locale plugin for OpenCode — AI reply localization + TUI slot replacement + slash commands",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike652638/opencode-zh-plugin.git"
+  },
+  "homepage": "https://github.com/mike652638/opencode-zh-plugin#readme",
   "keywords": ["opencode", "plugin", "i18n", "chinese", "zh-CN", "zh-TW", "localization"],
   "main": "./dist/server.js",
   "exports": {
